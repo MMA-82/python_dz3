@@ -2,9 +2,9 @@
 
 import random
 list = []
-d = int(input('Задайте длину списка: '))
+length = int(input('Задайте длину списка: '))
 sum = 0
-for i in range(d):
+for i in range(length):
     list.append(random.randint(0, 10))
     if i % 2 == 1:
         sum += list[i]
