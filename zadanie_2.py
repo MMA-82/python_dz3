@@ -11,4 +11,6 @@ for i in range(length//2):
     prod = (list[i] * list[len(list)-1])
     prodlist.append(prod)
     list.pop()
-print(prodlist)
+if length %2 != 0:
+    prodlist.append(pow(list[len(list)//2 + 1], 2))
+print(f'Произведение пар чисел: {prodlist}')
